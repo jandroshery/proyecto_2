@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #2C3E50;
+            --color-secondary: #18BC9C;
+            --color-accent: #F39C12;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--color-primary);
+        }
+
+        .navbar {
+            background-color: var(--color-primary);
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .banner {
+            background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-primary {
+            background-color: var(--color-secondary);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .team img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .contact-card {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons a {
+            color: var(--color-primary);
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: var(--color-accent);
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clínica Veterinaria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="banner">
+        <div class="text-center">
+            <h1>🐾 Bienvenidos a la Clínica Veterinaria 🐾</h1>
+            <p class="lead">Cuidamos de tus mascotas como si fueran nuestras.</p>
+            <a href="#servicios" class="btn btn-primary btn-lg">Conoce nuestros servicios</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://purina.com.do/sites/default/files/2022-10/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg" class="card-img-top" alt="Consulta General">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-stethoscope"></i> Consulta General</h5>
+                        <p class="card-text">Revisiones completas para mantener a tu mascota saludable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://holavet.com.ar/wp-content/uploads/2022/04/close-up-on-veterinarian-taking-care-of-pet-1.webp" class="card-img-top" alt="Cirugías">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-syringe"></i> Cirugías</h5>
+                        <p class="card-text">Procedimientos quirúrgicos con tecnología de última generación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://neozoo.com.ar/wp-content/uploads/2023/06/Iconos-e-imagenes-09.png" class="card-img-top" alt="Peluquería">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-cut"></i> Peluquería</h5>
+                        <p class="card-text">Servicios de peluquería para que tu mascota luzca increíble.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="container my-5">
+        <h2 class="text-center mb-4">Nuestro Equipo</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Dra. Ana López">
+                <h3>Dra. Ana López</h3>
+                <p>Especialista en Medicina Interna</p>
+                <p>Con más de 10 años de experiencia en el cuidado de mascotas.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Dr. Carlos Méndez">
+                <h3>Dr. Carlos Méndez</h3>
+                <p>Especialista en Cirugía</p>
+                <p>Experto en procedimientos quirúrgicos complejos.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dra. Laura Gómez">
+                <h3>Dra. Laura Gómez</h3>
+                <p>Especialista en Dermatología</p>
+                <p>Dedicada al cuidado de la piel y el pelaje de tus mascotas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-card text-center">
+                    <h3>📞 Llámanos</h3>
+                    <p>+52-555-1234-567</p>
+                    <a href="https://wa.me/525551234567" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            <p>Horarios: Lunes a Viernes 9:00 - 18:00</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Mensaje Enviado 🎉</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Gracias por contactarnos! Te responderemos pronto. 😊
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            if (!validateEmail(email)) {
+                alert('Por favor, introduce un email válido.');
+                return;
+            }
+            var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+            myModal.show();
+        });
+
+        function validateEmail(email) {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>
